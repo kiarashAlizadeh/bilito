@@ -16,6 +16,9 @@ import bime from "./icons/navbar/bime.svg"
 import flight from "./icons/navbar/flight.svg"
 import contactUs from "./icons/navbar/contactUs.svg"
 import aboutUs from "./icons/navbar/aboutUs.svg"
+import search from "./icons/home/search.svg"
+import flightGrey from "./icons/home/flight.svg"
+import flightBlue from "./icons/home/flightBlue.svg"
 
 // images
 import fullLogo from "./images/fullLogo.svg"
@@ -26,6 +29,8 @@ import cao from "./images/footer/brands/cao.svg"
 import eNamad from "./images/footer/brands/eNamad.svg"
 import iranAir from "./images/footer/brands/iranAir.svg"
 import passengerRight from "./images/footer/brands/passengerRight.svg"
+// Home
+import homeHeader from "./images/home/home-header.png"
 
 export {
   logo,
@@ -53,4 +58,8 @@ export {
   flight,
   contactUs,
   aboutUs,
+  homeHeader,
+  search,
+  flightBlue,
+  flightGrey,
 }

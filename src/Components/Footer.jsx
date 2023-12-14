@@ -18,7 +18,7 @@ import {
 function Footer() {
   return (
     <>
-      <footer className="flex flex-col gap-y-8 px-5 pb-9 text-[#606060]">
+      <footer className="flex flex-col gap-y-8 px-5 pb-9 text-[#606060] pt-4">
         <div className="justify-between sm:flex">
           <div className="mb-8 sm:flex sm:flex-col sm:justify-around">
             <div className="mb-8 hidden sm:flex sm:flex-col">

@@ -1,5 +1,11 @@
+import Header from "./Header"
+
 function Home() {
-  return <>Home page</>;
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
 
-export default Home;
+export default Home
