@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* navlink active */
+.active {
+  @apply text-base font-bold text-[#1D91CC] lg:text-xl lg:hover:text-[#1f6182] !important;
+}
+
+nav ul li a {
+  @apply lg:hover:text-black;
+}
+
+/* انیمیشن برای نوبار موبایل */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  max-width: 350px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.navbar-menu.flex {
+  display: flex;
+  animation-name: slideIn;
+}
