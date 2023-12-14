@@ -19,6 +19,7 @@ import aboutUs from "./icons/navbar/aboutUs.svg"
 import search from "./icons/home/search.svg"
 import flightGrey from "./icons/home/flight.svg"
 import flightBlue from "./icons/home/flightBlue.svg"
+import arrowRightBlue from "./icons/arrowRightBlue.svg"
 
 // images
 import fullLogo from "./images/fullLogo.svg"
@@ -31,6 +32,7 @@ import iranAir from "./images/footer/brands/iranAir.svg"
 import passengerRight from "./images/footer/brands/passengerRight.svg"
 // Home
 import homeHeader from "./images/home/home-header.png"
+import notFound from "./images/notFound.svg"
 
 export {
   logo,
@@ -62,4 +64,6 @@ export {
   search,
   flightBlue,
   flightGrey,
+  notFound,
+  arrowRightBlue,
 }
