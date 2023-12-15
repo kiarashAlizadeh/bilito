@@ -24,7 +24,7 @@ function Footer() {
   }
   return (
     <>
-      <footer className="flex select-none flex-col gap-y-8 px-5 pb-9 pt-4 text-[#606060]">
+      <footer className="flex select-none flex-col gap-y-8 px-5 pb-9 pt-4 text-[#606060] xl:px-[108px]">
         <div className="justify-between sm:flex">
           <div className="mb-8 sm:flex sm:flex-col sm:justify-around">
             <div className="mb-8 hidden sm:flex sm:flex-col">

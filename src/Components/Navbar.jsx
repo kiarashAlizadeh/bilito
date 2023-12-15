@@ -22,9 +22,9 @@ function Navbar() {
   return (
     <>
       <nav className="select-none">
-        <div className=" hidden justify-between px-[108px] py-8 text-[#606060] lg:flex">
+        <div className=" hidden justify-between px-10 py-8 text-[#606060] lg:flex xl:px-[108px]">
           <img src={fullLogo} draggable="false" alt="bilito" />
-          <ul className="mx-4 flex justify-around gap-x-2 text-xl xl:gap-x-8">
+          <ul className="mx-4 flex justify-around gap-x-4 text-xl xl:gap-x-8">
             <li>
               <NavLink to="/"> صفحه اصلی </NavLink>
             </li>
