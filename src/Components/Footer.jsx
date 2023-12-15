@@ -16,6 +16,12 @@ import {
 } from "../assets"
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
   return (
     <>
       <footer className="flex select-none flex-col gap-y-8 px-5 pb-9 pt-4 text-[#606060]">
@@ -120,7 +126,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <button className="mx-auto w-fit">
+        <button className="mx-auto w-fit" onClick={scrollToTop}>
           <img
             draggable="false"
             src={topBTN}
