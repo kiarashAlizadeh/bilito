@@ -14,10 +14,9 @@ function TourHeader() {
           draggable="false"
           src={tourHeader}
           alt="flight"
-          draggable="false"
           className="h-[140px] w-full sm:h-full"
         />
-        <div className="left-0 right-0 mx-auto flex flex-col items-center gap-6 rounded-lg px-5 pb-4 pt-3 shadow-xl lg:absolute lg:-bottom-[45px] lg:max-w-[950px] lg:flex-row lg:bg-white lg:p-6 xl:max-w-[1200px] ">
+        <div className="left-0 right-0 mx-auto flex flex-col flex-wrap items-center gap-6 rounded-lg px-5 pb-4 pt-3 shadow-xl sm:flex-row lg:absolute lg:-bottom-[45px] lg:max-w-[950px] lg:bg-white lg:p-6 xl:max-w-[1200px] ">
           <span className="text-center text-xl font-bold">
             نتایج جستجو برای:
           </span>
@@ -30,7 +29,7 @@ function TourHeader() {
               اقتصادی
             </span>
           </div>
-          <div className="flex flex-col gap-2 lg:flex-row">
+          <div className="flex flex-col gap-3 lg:flex-row">
             <span className="flex gap-x-1">
               <img draggable="false" src={flightLeft} alt="flightLeft" />
               تورهای تهران به استانبول
