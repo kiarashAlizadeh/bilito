@@ -18,7 +18,7 @@ import {
 function Footer() {
   return (
     <>
-      <footer className="flex flex-col gap-y-8 px-5 pb-9 text-[#606060] pt-4">
+      <footer className="flex select-none flex-col gap-y-8 px-5 pb-9 pt-4 text-[#606060]">
         <div className="justify-between sm:flex">
           <div className="mb-8 sm:flex sm:flex-col sm:justify-around">
             <div className="mb-8 hidden sm:flex sm:flex-col">
@@ -42,7 +42,7 @@ function Footer() {
                   تلفن پشتیبانی: {"\u00A0"} 02132547698
                 </Link>
               </div>
-              <img src={fullLogo} alt="Bimito" />
+              <img draggable="false" src={fullLogo} alt="Bimito" />
             </div>
           </div>
 
@@ -72,10 +72,15 @@ function Footer() {
             </span>
             <span className="sm:flex sm:gap-x-6">
               <Link to="">
-                <img src={playStore} alt="playStore" className="mb-3" />
+                <img
+                  draggable="false"
+                  src={playStore}
+                  alt="playStore"
+                  className="mb-3"
+                />
               </Link>
               <Link to="">
-                <img src={appleStore} alt="appleStore" />
+                <img draggable="false" src={appleStore} alt="appleStore" />
               </Link>
             </span>
           </div>
@@ -84,27 +89,27 @@ function Footer() {
         <div className="sm:flex sm:flex-row-reverse sm:justify-around">
           {/* brands */}
           <div className="mb-8 flex flex-wrap items-center justify-between gap-5">
-            <img src={aira} alt="" />
-            <img src={cao} alt="" />
-            <img src={iranAir} alt="" />
-            <img src={eNamad} alt="" />
-            <img src={passengerRight} alt="" />
+            <img draggable="false" src={aira} alt="" />
+            <img draggable="false" src={cao} alt="" />
+            <img draggable="false" src={iranAir} alt="" />
+            <img draggable="false" src={eNamad} alt="" />
+            <img draggable="false" src={passengerRight} alt="" />
           </div>
 
           <div className="flex flex-col gap-y-2 sm:flex-col sm:items-center">
             {/* social media */}
             <div className="mx-auto flex w-full max-w-[300px] items-center justify-around gap-x-6">
               <Link to="">
-                <img src={facebook} alt="" />
+                <img draggable="false" src={facebook} alt="" />
               </Link>
               <Link to="">
-                <img src={instagram} alt="" />
+                <img draggable="false" src={instagram} alt="" />
               </Link>
               <Link to="">
-                <img src={telegram} alt="" />
+                <img draggable="false" src={telegram} alt="" />
               </Link>
               <Link to="">
-                <img src={twitter} alt="" />
+                <img draggable="false" src={twitter} alt="" />
               </Link>
             </div>
             <Link
@@ -116,7 +121,12 @@ function Footer() {
           </div>
         </div>
         <button className="mx-auto w-fit">
-          <img src={topBTN} alt="topBTN" className="mx-auto w-10 " />
+          <img
+            draggable="false"
+            src={topBTN}
+            alt="topBTN"
+            className="mx-auto w-10 "
+          />
           <span className="hidden font-semibold text-[#404040] sm:inline">
             بازگشت به بالا
           </span>

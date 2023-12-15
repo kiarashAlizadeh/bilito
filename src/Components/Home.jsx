@@ -1,9 +1,9 @@
-import Header from "./Header"
+import HomeHeader from "./HomeHeader"
 
 function Home() {
   return (
     <>
-      <Header />
+      <HomeHeader />
     </>
   )
 }

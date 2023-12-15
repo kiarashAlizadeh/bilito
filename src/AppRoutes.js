@@ -1,18 +1,22 @@
-import { NotFound, Home, SignIn } from './Components';
+import { NotFound, Home, SignIn, TourSearch } from "./Components"
 
 const AppRoute = [
   {
-    path: '*',
+    path: "*",
     element: <NotFound />,
   },
   {
-    path: '/',
+    path: "/",
     element: <Home />,
   },
   {
-    path: '/signIn',
+    path: "/signIn",
     element: <SignIn />,
   },
-];
+  {
+    path: "/tourSearch",
+    element: <TourSearch />,
+  },
+]
 
-export default AppRoute;
+export default AppRoute

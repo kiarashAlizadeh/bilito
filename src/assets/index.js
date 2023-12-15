@@ -20,6 +20,12 @@ import search from "./icons/home/search.svg"
 import flightGrey from "./icons/home/flight.svg"
 import flightBlue from "./icons/home/flightBlue.svg"
 import arrowRightBlue from "./icons/arrowRightBlue.svg"
+import star from "./icons/home/star.svg"
+import info from "./icons/home/info.svg"
+import calendar from "./icons/tourSearch/calendar.svg"
+import edit from "./icons/tourSearch/edit.svg"
+import flightLeft from "./icons/tourSearch/flightLeft.svg"
+import passenger from "./icons/tourSearch/passenger.svg"
 
 // images
 import fullLogo from "./images/fullLogo.svg"
@@ -33,9 +39,16 @@ import passengerRight from "./images/footer/brands/passengerRight.svg"
 // Home
 import homeHeader from "./images/home/home-header.png"
 import notFound from "./images/notFound.svg"
+// TourSearch
+import tourHeader from "./images/tourHeader.jpg"
+// hotels
+import tangoHotel from "./images/home/hotels/tangoHotel.jpg"
 
 export {
   logo,
+  edit,
+  flightLeft,
+  passenger,
   fullLogo,
   playStore,
   appleStore,
@@ -66,4 +79,9 @@ export {
   flightGrey,
   notFound,
   arrowRightBlue,
+  tangoHotel,
+  star,
+  info,
+  tourHeader,
+  calendar,
 }

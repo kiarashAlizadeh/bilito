@@ -21,7 +21,7 @@ function Navbar() {
   const isLogin = false
   return (
     <>
-      <nav>
+      <nav className="select-none">
         <div className=" hidden justify-between px-[108px] py-8 text-[#606060] lg:flex">
           <img src={fullLogo} draggable="false" alt="bilito" />
           <ul className="mx-4 flex justify-around gap-x-2 text-xl xl:gap-x-8">

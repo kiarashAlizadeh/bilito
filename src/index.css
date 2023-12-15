@@ -38,3 +38,7 @@ nav ul li a {
   display: flex;
   animation-name: slideIn;
 }
+
+.dot {
+  @apply mx-1 inline-block h-1 w-1 rounded-full bg-[#BEC6CC] align-middle;
+}
