@@ -16,7 +16,7 @@ function Tour({ pic, hotelName, rate, city, region, price }) {
             <img draggable="false" src={star} alt="star" />
             {rate}ستاره
           </span>
-          <span className="">
+          <span>
             {city} <span className="dot"></span> {region}
           </span>
           <span className="text-[#959ea6]">

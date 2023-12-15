@@ -42,9 +42,9 @@ function TourHeader() {
               <img draggable="false" src={calendar} alt="calendar" />6 شب و 7
               روز
             </span>
-            <span className="flex gap-x-1">
-              <img draggable="false" src={passenger} alt="passenger" />2 مسافر 1
-              اتاق
+            <span className="flex gap-x-1 items-center">
+              <img draggable="false" src={passenger} alt="passenger" />2 مسافر{" "}
+              <span className="dot"></span>1 اتاق
             </span>
           </div>
           <button className=" mx-auto flex w-full max-w-[200px] items-center justify-center gap-x-2 rounded-lg bg-[#1d92cc] px-4 py-2 text-white">
