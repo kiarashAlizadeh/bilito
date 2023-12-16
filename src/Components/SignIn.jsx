@@ -6,6 +6,7 @@ import { fullLogo, arrowRightBig, clock } from "../assets"
 function SignIn() {
   const [reqLogin, setReqLogin] = useContext(UserContext)
   const [isPhoneNumberFull, setIsPhoneNumberFull] = useState(false)
+  const [isRuleChecked, setIsRuleChecked] = useState(false)
   const [isOtpFull, setIsOtpFull] = useState(false)
   const [isOtp, setIsOtp] = useState(false)
 
@@ -91,11 +92,14 @@ function SignIn() {
                 className="mb-8 rounded-lg border-2 border-[#1D91CC] px-2 py-1 text-right text-[#1D91CC]"
               />
               <span className="flex items-center gap-x-3">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsRuleChecked(e.target.checked)}
+                />
                 <span className="text-xs text-[#606060]">
                   با ورود و ثبت‌نام در سایت، با
                   <Link to="" className="text-[#1D91CC]">
-                    قوانین بیلیتو
+                    {"\u00A0"} قوانین بیلیتو {"\u00A0"}
                   </Link>
                   موافقت می‌کنم.
                 </span>
@@ -104,11 +108,11 @@ function SignIn() {
             <button
               onClick={signInHandler}
               className={`w-full rounded-lg px-4 py-2 md:w-48 ${
-                isPhoneNumberFull
+                isPhoneNumberFull && isRuleChecked
                   ? "bg-[#1D91CC] text-white hover:bg-opacity-75"
                   : "bg-[#d9d7d7] text-[#ADADAD]"
               } `}
-              disabled={!isPhoneNumberFull}
+              disabled={!isPhoneNumberFull || !isRuleChecked}
             >
               تایید و ادامه
             </button>
