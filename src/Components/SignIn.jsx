@@ -178,7 +178,7 @@ function SignIn() {
               </div>
             </div>
             <button
-              onClick={setReqLogin(false)}
+              onClick={(e) => setReqLogin(false)}
               className={`w-full rounded-lg px-4 py-2 md:w-48 ${
                 otpComplete.length === 4
                   ? "bg-[#1D91CC] text-white md:hover:bg-opacity-75"
