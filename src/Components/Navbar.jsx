@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { UserContext } from "../App"
 import { Link, NavLink } from "react-router-dom"
 import {
   fullLogo,
@@ -16,6 +17,8 @@ import {
 } from "../assets"
 
 function Navbar() {
+  const [reqLogin, setReqLogin] = useContext(UserContext)
+
   const [resNavbar, setResNavbar] = useState(false)
 
   const isLogin = false
@@ -46,13 +49,13 @@ function Navbar() {
               021-4045 پشتیبانی
               <img draggable="false" src={phone} alt="phone" />
             </Link>
-            <Link
-              to=""
+            <button
+              onClick={(e) => setReqLogin(true)}
               className="flex w-fit items-center gap-x-2 rounded-lg bg-[#1D91CC] px-4 py-2 text-white hover:bg-opacity-75"
             >
               <img draggable="false" src={person} alt="person" />
               ورود/ ثبت نام
-            </Link>
+            </button>
           </div>
         </div>
         {/* responsive for mobile */}
@@ -63,11 +66,13 @@ function Navbar() {
             onClick={() => setResNavbar((prev) => !prev)}
           />
           <img src={fullLogo} draggable="false" alt="bilito" />
-          <img src={personBlack} alt="person" />
+          <button onClick={(e) => setReqLogin(true)}>
+            <img src={personBlack} alt="person" />
+          </button>
           {/* main responsive menu */}
           <div class={` ${resNavbar ? "flex" : "hidden"}  relative z-50`}>
             <div
-              class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-40"
+              class=" fixed inset-0 bg-gray-800 opacity-40"
               onClick={() => setResNavbar((prev) => !prev)}
             ></div>
             <nav className="navbar-menu fixed bottom-0 right-0 top-0 flex w-full max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6">
@@ -126,13 +131,13 @@ function Navbar() {
                 </li>
               </ul>
               {!isLogin && (
-                <Link
-                  to=""
+                <button
+                  onClick={(e) => setReqLogin(true)}
                   className="flex w-full items-center justify-center gap-x-2 rounded-lg bg-[#1D91CC] px-4 py-3 text-white hover:bg-opacity-75"
                 >
                   <img draggable="false" src={person} alt="person" />
                   ورود/ ثبت نام
-                </Link>
+                </button>
               )}
             </nav>
           </div>

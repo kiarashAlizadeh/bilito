@@ -26,6 +26,8 @@ import calendar from "./icons/tourSearch/calendar.svg"
 import edit from "./icons/tourSearch/edit.svg"
 import flightLeft from "./icons/tourSearch/flightLeft.svg"
 import passenger from "./icons/tourSearch/passenger.svg"
+import arrowRightBig from "./icons/logIn/arrowRightBig.svg"
+import clock from "./icons/logIn/clock.svg"
 
 // images
 import fullLogo from "./images/fullLogo.svg"
@@ -84,4 +86,6 @@ export {
   info,
   tourHeader,
   calendar,
+  arrowRightBig,
+  clock,
 }
