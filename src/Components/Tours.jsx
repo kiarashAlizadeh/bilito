@@ -7,10 +7,10 @@ function Tours() {
     {
       pic: tangoHotel,
       hotelName: "The TANGO Hotel Sisli",
-      rate: 4,
+      rate: 2,
       city: "استانبول",
       region: "شیشلی",
-      price: "139,854,000",
+      price: "103,854,000",
     },
     {
       pic: "https://cdn.alibaba.ir/ostorage/hotel-giata-images/434048/a66c619efd876bdc7a95d24447057a13.jpg?w=300",
@@ -39,7 +39,7 @@ function Tours() {
     {
       pic: "https://cdn.alibaba.ir/ostorage/hotel/images/9719A7AD/615874931C027ED0579EE0C123B04249.jpg?w=300",
       hotelName: "White Monarch Hotel",
-      rate: 4,
+      rate: 3,
       city: "استانبول",
       region: "شیشلی",
       price: "136,380,000",

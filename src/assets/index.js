@@ -21,6 +21,7 @@ import flightGrey from "./icons/home/flight.svg"
 import flightBlue from "./icons/home/flightBlue.svg"
 import arrowRightBlue from "./icons/arrowRightBlue.svg"
 import star from "./icons/home/star.svg"
+import starNot from "./icons/home/star-not.svg"
 import info from "./icons/home/info.svg"
 import calendar from "./icons/tourSearch/calendar.svg"
 import edit from "./icons/tourSearch/edit.svg"
@@ -88,4 +89,5 @@ export {
   calendar,
   arrowRightBig,
   clock,
+  starNot,
 }

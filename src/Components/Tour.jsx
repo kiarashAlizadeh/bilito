@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
-import { star, info } from "../assets"
+import { star, starNot, info } from "../assets"
 function Tour({ pic, hotelName, rate, city, region, price }) {
+  // تعداد ستاره‌ها
+  const starCount = Math.min(5, Math.max(0, rate))
+  // تعداد تصاویر starNot
+  const starNotCount = 5 - starCount
   return (
     <>
       <div className="max-w-[300px] items-center rounded-lg border-2 border-[#CBCBCB] p-2 sm:flex sm:w-[600px] sm:max-w-full sm:gap-x-5">
@@ -13,8 +17,33 @@ function Tour({ pic, hotelName, rate, city, region, price }) {
         <div className="mt-2 flex flex-col gap-y-2 border-t-2 border-slate-300 py-2 sm:border-none">
           <h3 className="text-center text-xl font-bold">{hotelName}</h3>
           <span className="flex items-center gap-x-2">
-            <img draggable="false" src={star} alt="star" />
-            {rate}ستاره
+            <span className="flex gap-x-1">
+              {/* نمایش تصاویر ستاره */}
+              {Array.from({ length: starCount }, function (_, index) {
+                return (
+                  <img
+                    key={index}
+                    src={star}
+                    alt="star"
+                    draggable="false"
+                    class="h-[27px] w-[20px]"
+                  />
+                )
+              })}
+
+              {/* نمایش تصاویر starNot */}
+              {Array.from({ length: starNotCount }, function (_, index) {
+                return (
+                  <img
+                    key={index}
+                    src={starNot}
+                    alt="StarNot"
+                    draggable="false"
+                    class="h-[27px] w-[20px]"
+                  />
+                )
+              })}
+            </span>
           </span>
           <span>
             {city} <span className="dot"></span> {region}
